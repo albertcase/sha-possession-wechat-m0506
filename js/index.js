@@ -13,18 +13,18 @@ var loader = new WxMoment.Loader();
 
 //声明资源文件列表
 var fileList = [
-	'/img/place.jpg',
-	'/img/bg.jpg', 
-	'/img/light.png', 
-	'/img/ring.png', 
-	'/img/arr_l.png', 
-	'/img/arr_r.png', 
-	'/img/btn.png', 
-	'/img/logo.png', 
-	'/img/tips.png', 
-	'/img/videobg.jpg', 
-	'/img/poster-1.jpg',
-	'/img/poster-2.jpg',
+	'img/place.jpg',
+	'img/bg.jpg', 
+	'img/light.png', 
+	'img/ring.png', 
+	'img/arr_l.png', 
+	'img/arr_r.png', 
+	'img/btn.png', 
+	'img/logo.png', 
+	'img/tips.png', 
+	'img/videobg.jpg', 
+	'img/poster-1.jpg',
+	'img/poster-2.jpg',
 ];
 
 for (var i = 0; i < fileList.length; i++) {
