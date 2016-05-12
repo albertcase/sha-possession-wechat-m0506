@@ -22,5 +22,5 @@ new WxMoment.Share({
 });
 
 
-new WxMoment.OrientationTip();
+//new WxMoment.OrientationTip();
 
