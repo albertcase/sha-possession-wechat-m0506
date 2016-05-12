@@ -76,9 +76,9 @@ tweening it px by px all the way through*/
 
 .bg.startAnimate .light, .light.startAnimate {
     -webkit-animation: light-ride 900ms steps(23, end) 1;
-    /*-webkit-animation-delay: 100ms;*/
+    -webkit-animation-delay: 300ms;
     -moz-animation: light-ride 900ms steps(23, end) 1;
-    /*-moz-animation-delay: 100ms;*/
+    -moz-animation-delay: 300ms;
     /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
     background-position: 0 100%;
     
