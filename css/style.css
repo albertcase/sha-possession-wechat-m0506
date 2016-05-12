@@ -154,6 +154,7 @@ tweening it px by px all the way through*/
     left: 0;
     top: 36%;
     overflow: hidden;
+    opacity: 0;
 }
 
 .swiper-container {

@@ -73,14 +73,12 @@ $(document).ready(function(){
 
 
 	var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 0,
         onInit: function(swiper){
 		    //Swiper初始化了
 		    //alert(swiper.activeIndex);提示Swiper的当前索引
+		    $(".videoCon").css({"opacity": 1});
 		    videoFun(swiper.activeIndex);
 	    },
         onSlideChangeEnd: function(swiper){
