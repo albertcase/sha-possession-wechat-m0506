@@ -145,8 +145,12 @@ html{
     opacity: 0;
 }
 
-
-
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #fff url("../img/loading.gif") center no-repeat;
+}
 
 
 
