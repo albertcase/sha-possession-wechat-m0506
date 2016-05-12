@@ -22,7 +22,7 @@ $(document).ready(function(){
         projectName: "20160520Piaget"
     });
     
-    var video, vidArr = ["u01677nomdb", "a0016gys8ct"], modIdArr = ["v1", "v2"], picArr = ["/img/poster-1.jpg", "/img/poster-2.jpg"];
+    var video, vidArr = ["z0191hxugeu", "z0191hxugeu"], modIdArr = ["v1", "v2"], picArr = ["/img/poster-1.jpg", "/img/poster-2.jpg"];
 
     var videoWidth = document.body.clientWidth;
 	var videoHeight = videoWidth * (1080 / 1920);

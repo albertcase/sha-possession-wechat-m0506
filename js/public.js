@@ -1,4 +1,6 @@
-
+document.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+}, false);
 
 var basePath= "/";//'http://wximg.qq.com/wxp/moment/Vy5RRaaAl/';
 var wa = new WxMoment.Analytics({

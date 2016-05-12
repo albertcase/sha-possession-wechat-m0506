@@ -1,12 +1,16 @@
 @charset "utf-8";
 
+.index *{
+    /*设置内嵌的元素在 3D 空间如何呈现：保留 3D*/
+    -webkit-transform-style: preserve-3d;
+    /*（设置进行转换的元素的背面在面对用户时是否可见：隐藏）*/
+    -webkit-backface-visibility: hidden;
+}
+
+
 #dreambox{
     width: 100%;
     position: relative;
-}
-
-.index{
-    opacity: 0;
 }
 
 .bg {
@@ -58,25 +62,36 @@ tweening it px by px all the way through*/
     position: absolute;
     left: 50%;
     top: 67%;
-    background: url("../img/light.png") 30.5% 0 no-repeat;
+    background: url("../img/light.png") 0 0 no-repeat;
     background-size: auto 100%;
     margin: 0 0 0 -25%;
+
+    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
 }
 
-.bg.startAnimate .light {
-    -webkit-animation: horse-ride 900ms steps(23, end) 1;
+.bg.startAnimate .light, .light.startAnimate {
+    -webkit-animation: light-ride 900ms steps(23, end) 1;
     /*-webkit-animation-delay: 100ms;*/
-    -moz-animation: horse-ride 900ms steps(23, end) 1;
+    -moz-animation: light-ride 900ms steps(23, end) 1;
     /*-moz-animation-delay: 100ms;*/
     /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
     background-position: 0 100%;
-    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
-    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+    
     /*-webkit-transition: all 2.5s ease-in;*/
     /*-moz-transition: all 2.5s ease-in;*/
 
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes light-ride {
+    0% {background-position: 0 0;}
+    100% {background-position: 100% 0;}
+}
+@-moz-keyframes light-ride {
+    0% {background-position: 0 0;}
+    100% {background-position: 100% 0;}
 }
 
 
@@ -112,6 +127,11 @@ tweening it px by px all the way through*/
     left: 0;
     top: 5%;
     z-index: 6;
+    text-align: center;
+}
+
+.logo img{
+    width: 100%;
 }
 
 .activeTips{
@@ -192,6 +212,55 @@ tweening it px by px all the way through*/
 
 
 
+
+
+/* 4s */
+@media handheld and (min-height:400px),screen and (max-height:420px) {
+    .logo img{
+        width: 90%;
+    }
+
+    .ring{
+        width: 45%;
+        height: 42%;
+        position: absolute;
+        left: 50%;
+        top: 27%;
+        background: url("../img/ring.png") 0 0 no-repeat;
+        background-size: auto 100%;
+        margin: 0 0 0 -22.5%;
+    }
+
+    /* light */
+    .light{
+        width: 40%;
+        height: 20%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        background: url("../img/light.png") 0 0 no-repeat;
+        background-size: auto 100%;
+        margin: 0 0 0 -20%;
+
+        -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+        -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+        z-index: 2;
+    }
+
+    .activeTips{
+        bottom: 22%;
+    }
+
+
+    .videoCon{
+        top: 30%;
+    }
+
+    .morebtn{
+        bottom: 16%;
+    }
+
+}
 
 
 

@@ -14,7 +14,7 @@ var fileList = [
 	'img/tips.png', 
 	'img/videobg.jpg', 
 	'img/poster-1.jpg',
-	'img/poster-2.jpg',
+	'img/poster-2.jpg'
 ];
 
 for (var i = 0; i < fileList.length; i++) {
@@ -33,11 +33,14 @@ loader.addProgressListener(function (e) {
 loader.addCompletionListener(function () {
     //可以在这里隐藏 Loading 页面开始进入主内容页面
     $(".loading").css({"opacity": 0});
-    $(".index").css({"opacity": 1});
+
+    $(".light").addClass("startAnimate");
 
     //swipe example
 	touch.on('.index', 'swiperight', function(ev){
-	    $(".bg").addClass("startAnimate");
+	    $(".bg").addClass("startAnimate");  
+	    $(".light").hide();
+	    $(".activeTips").hide();
 	});
 
 });
@@ -47,11 +50,11 @@ loader.start();
 
 
 
-var lightAnimate = document.getElementById("lightAnimate");
-lightAnimate.addEventListener("webkitAnimationEnd", animationListener_lightAnimate, false);
-function animationListener_lightAnimate(){
-	$(".activeTips").hide();
-	$(".light").hide();
+var ringAnimate = document.getElementById("ringAnimate");
+ringAnimate.addEventListener("webkitAnimationEnd", animationListener_ringAnimate, false);
+function animationListener_ringAnimate(){
 	window.location.href = "video.html";
 }
+
+
 
