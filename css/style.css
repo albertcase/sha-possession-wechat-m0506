@@ -7,6 +7,9 @@
     -webkit-backface-visibility: hidden;
 }
 
+.index{
+    opacity: 0;
+}
 
 #dreambox{
     width: 100%;

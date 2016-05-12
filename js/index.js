@@ -32,7 +32,7 @@ loader.addProgressListener(function (e) {
 loader.addCompletionListener(function () {
     //可以在这里隐藏 Loading 页面开始进入主内容页面
     $(".loading").css({"opacity": 0});
-
+    $(".index").css({"opacity": 1});
     $(".light").addClass("startAnimate");
 
     //swipe example
