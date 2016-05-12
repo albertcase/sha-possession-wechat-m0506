@@ -3,7 +3,6 @@ var loader = new WxMoment.Loader();
 
 //声明资源文件列表
 var fileList = [
-	'img/place.jpg',
 	'img/bg.jpg', 
 	'img/light.png', 
 	'img/ring.png', 
