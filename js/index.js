@@ -30,7 +30,12 @@ loader.addProgressListener(function (e) {
 //加载完成
 loader.addCompletionListener(function () {
     //可以在这里隐藏 Loading 页面开始进入主内容页面
-    //$(".index").css({"opacity": 1});
+    $("img").each(function(){ 
+        $(this).attr("src",$(this).attr("sourcesrc"));
+    })
+
+    $(".index").css({"opacity": 1});
+
     $(".light").addClass("startAnimate");
 
     //swipe example
