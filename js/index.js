@@ -23,15 +23,14 @@ for (var i = 0; i < fileList.length; i++) {
 //进度监听
 loader.addProgressListener(function (e) {
     var percent = Math.round((e.completedCount / e.totalCount) * 100);
-        $(".loading").css({"width": percent+"%"});
-    //console.log("当前加载了", percent, "%");
+    console.log("当前加载了", percent, "%");
     //在这里做 Loading 页面中百分比的显示
 });
 
 //加载完成
 loader.addCompletionListener(function () {
     //可以在这里隐藏 Loading 页面开始进入主内容页面
-    $(".index").css({"opacity": 1});
+    //$(".index").css({"opacity": 1});
     $(".light").addClass("startAnimate");
 
     //swipe example
