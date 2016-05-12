@@ -1,2 +1,209 @@
 @charset "utf-8";
 
+#dreambox{
+    width: 100%;
+    position: relative;
+}
+
+.index{
+    opacity: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg.jpg") 0 0 no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:2;
+}
+
+/*Clicking the label will select the checkbox which will be used to
+trigger the animation of the horses*/
+
+.bg.startAnimate {
+    -webkit-animation: horse-ride 1750ms steps(14, end) 1;
+    /*-webkit-animation-delay: 100ms;*/
+    -moz-animation: horse-ride 1750ms steps(14, end) 1;
+    /*-moz-animation-delay: 100ms;*/
+    /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
+    background-position: 0 100%;
+    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+/*804px is the width of the image with 12 horse frames
+steps are used in the animation to have the best animation effect
+it will position the horse frames accurately in the boxes instead of
+tweening it px by px all the way through*/
+@-webkit-keyframes horse-ride {
+    0% {background-position: 0 0;}
+    100% {background-position: 100% 0;}
+}
+@-moz-keyframes horse-ride {
+    0% {background-position: 0 0;}
+    100% {background-position: 100% 0;}
+}
+
+
+/* light */
+.light{
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    background: url("../img/light.png") 30.5% 0 no-repeat;
+    background-size: auto 100%;
+    margin: 0 0 0 -25%;
+}
+
+.bg.startAnimate .light {
+    -webkit-animation: horse-ride 900ms steps(23, end) 1;
+    /*-webkit-animation-delay: 100ms;*/
+    -moz-animation: horse-ride 900ms steps(23, end) 1;
+    /*-moz-animation-delay: 100ms;*/
+    /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
+    background-position: 0 100%;
+    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+    /*-webkit-transition: all 2.5s ease-in;*/
+    /*-moz-transition: all 2.5s ease-in;*/
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+
+/* ring */
+.ring{
+    width: 52%;
+    height: 49%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    background: url("../img/ring.png") 0 0 no-repeat;
+    background-size: auto 100%;
+    margin: 0 0 0 -26%;
+}
+
+.bg.startAnimate .ring {
+    -webkit-animation: horse-ride 1750ms steps(17, end) 1;
+    /*-webkit-animation-delay: 100ms;*/
+    -moz-animation: horse-ride 1750ms steps(17, end) 1;
+    /*-moz-animation-delay: 100ms;*/
+    /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
+    background-position: 0 100%;
+    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.logo{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    z-index: 6;
+}
+
+.activeTips{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 9%;
+}
+
+
+/* video */
+.videoCon{
+    width: 100%;
+    height: 36%;
+    position: absolute;
+    left: 0;
+    top: 36%;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background: none;
+    right: 0;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background: none;
+    left: 0;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: 16%;
+    height: auto;
+    margin-top: -15%;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    opacity: 0;
+}
+
+.video{
+    width: 100%; 
+}
+
+.morebtn{
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
