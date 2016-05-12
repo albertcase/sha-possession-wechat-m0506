@@ -1,14 +1,4 @@
 
-$(document).on("swipeRight",function (event) {
-    $(".bg").addClass("startAnimate");
-}, {
-    x: 60,/*update the minimum swiping distance*/
-    y: 60
-});
-
-
-
-
 var loader = new WxMoment.Loader();
 
 //声明资源文件列表
@@ -44,6 +34,12 @@ loader.addCompletionListener(function () {
     //可以在这里隐藏 Loading 页面开始进入主内容页面
     $(".loading").css({"opacity": 0});
     $(".index").css({"opacity": 1});
+
+    //swipe example
+	touch.on('.index', 'swiperight', function(ev){
+	    $(".bg").addClass("startAnimate");
+	});
+
 });
 
 //启动加载
