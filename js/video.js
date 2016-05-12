@@ -45,15 +45,18 @@ $(document).ready(function(){
 		    },
 		    onplaying: function () {
 		        //播放器真正开始播放视频第一帧画面时
+		        $(".swiperArr").hide();
 		    },
 		    onpause: function () {
 		        //播放器触发暂停时，目前只针对HTML5播放器有效
+		        $(".swiperArr").show();
 		    },
 		    onresume: function () {
 		        //暂停后继续播放时触发
 		    },
 		    onallended: function () {
 		        //播放器播放完毕时
+		        $(".swiperArr").show();
 		    },
 		    onfullscreen: function (isfull) {
 		        //onfullscreen(isfull) 播放器触发全屏/非全屏时，参数isfull表示当前是否是全屏
@@ -75,6 +78,7 @@ $(document).ready(function(){
 	var swiper = new Swiper('.swiper-container', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        onlyExternal : true,
         onInit: function(swiper){
 		    //Swiper初始化了
 		    //alert(swiper.activeIndex);提示Swiper的当前索引

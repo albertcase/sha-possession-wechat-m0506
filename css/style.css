@@ -13,6 +13,7 @@
 
 #dreambox{
     width: 100%;
+    height: 100%;
     background: #000;
     position: relative;
 }
@@ -32,9 +33,9 @@
 trigger the animation of the horses*/
 
 .bg.startAnimate {
-    -webkit-animation: horse-ride 1250ms steps(14, end) 1;
+    -webkit-animation: horse-ride 1750ms steps(14, end) 1;
     /*-webkit-animation-delay: 100ms;*/
-    -moz-animation: horse-ride 1250ms steps(14, end) 1;
+    -moz-animation: horse-ride 1750ms steps(14, end) 1;
     /*-moz-animation-delay: 100ms;*/
     /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
     background-position: 0 100%;
@@ -112,9 +113,9 @@ tweening it px by px all the way through*/
 }
 
 .bg.startAnimate .ring {
-    -webkit-animation: horse-ride 1750ms steps(17, end) 1;
+    -webkit-animation: horse-ride 2250ms steps(17, end) 1;
     /*-webkit-animation-delay: 100ms;*/
-    -moz-animation: horse-ride 1750ms steps(17, end) 1;
+    -moz-animation: horse-ride 2250ms steps(17, end) 1;
     /*-moz-animation-delay: 100ms;*/
     /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
     background-position: 0 100%;

@@ -55,7 +55,9 @@ loader.start();
 var ringAnimate = document.getElementById("ringAnimate");
 ringAnimate.addEventListener("webkitAnimationEnd", animationListener_ringAnimate, false);
 function animationListener_ringAnimate(){
-	window.location.href = "video.html";
+	setTimeout(function(){
+		window.location.href = "video.html";
+	}, 2000)
 }
 
 
