@@ -13,6 +13,7 @@
 
 #dreambox{
     width: 100%;
+    height: auto;
     background: #000;
     position: relative;
 }
@@ -215,7 +216,20 @@ tweening it px by px all the way through*/
 }
 
 
+/* 6plus */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    #dreambox{
+        min-height: 100%;
+    }
 
+}
+
+/* 6 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 410px) and (orientation: portrait) {
+    #dreambox{
+        min-height: 100%;
+    }
+}
 
 
 
