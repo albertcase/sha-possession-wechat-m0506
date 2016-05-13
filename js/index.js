@@ -57,7 +57,7 @@ ringAnimate.addEventListener("webkitAnimationEnd", animationListener_ringAnimate
 function animationListener_ringAnimate(){
 	setTimeout(function(){
 		window.location.href = "video.html";
-	}, 2000)
+	}, 1000)
 }
 
 
