@@ -103,7 +103,7 @@ tweening it px by px all the way through*/
 /* ring */
 .ring{
     width: 52%;
-    height: 49%;
+    height: 50%;
     position: absolute;
     left: 50%;
     top: 30%;
@@ -119,8 +119,6 @@ tweening it px by px all the way through*/
     -moz-animation-delay: 300ms;
     /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
     background-position: 0 100%;
-    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
-    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
 
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -282,6 +280,90 @@ tweening it px by px all the way through*/
 }
 
 
+
+/*
+
+.bg.startAnimate .ring {
+  -webkit-animation-name: anim-name;
+  -webkit-animation-duration: 1800ms
+}
+
+
+@-webkit-keyframes anim-name{
+    0%{  
+        background-position: 0 0;
+        background-size: auto 100%;
+     }
+    5.9%{  
+        background-position: 5.89% 0;
+        background-size: auto 100%;
+    }
+    11.8%{  
+        background-position: 11.67% 0;
+        background-size: auto 100%;
+    }
+    17.7%{  
+        background-position: 17.53% 0;
+        background-size: auto 100%;
+    }
+    23.6%{  
+        background-position: 23.36% 0;
+        background-size: auto 100%;
+    }
+    29.5%{  
+        background-position: 29.19% 0;
+        background-size: auto 100%;
+    }
+    35.4%{  
+        background-position: 35.04% 0;
+        background-size: auto 100%;
+    }
+    41.3%{  
+        background-position: 40.91% 0;
+        background-size: auto 100%;
+    }
+    47.2%{  
+        background-position: 46.72% 0;
+        background-size: auto 100%;
+    }
+    53.1%{  
+        background-position: 52.57% 0;
+        background-size: auto 100%;
+    }
+    59%{  
+        background-position: 58.38% 0;
+        background-size: auto 100%;
+    }
+    64.9%{  
+        background-position: 64.27% 0;
+        background-size: auto 100%;
+    }
+    70.8%{  
+        background-position: 70.09% 0;
+        background-size: auto 100%;
+    }
+    76.7%{  
+        background-position: 75.95% 0;
+        background-size: auto 100%;
+    }
+    82.6%{  
+        background-position: 81.78% 0;
+        background-size: auto 100%;
+    }
+    88.5%{  
+        background-position: 87.60% 0;
+        background-size: auto 100%;
+    }
+    94.4%{  
+        background-position: 93.41% 0;
+        background-size: auto 100%;
+    }
+    100%{  
+        background-position: 99.31% 0;
+        background-size: auto 100%;
+    }
+}
+*/
 
 
 

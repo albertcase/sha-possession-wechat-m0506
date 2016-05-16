@@ -38,6 +38,8 @@ loader.addCompletionListener(function () {
 
     $(".light").addClass("startAnimate");
 
+    $(".testcon").css("width", parseInt($("#ringAnimate").css("width"), 10)/18);
+
     //swipe example
 	touch.on('.index', 'swiperight', function(ev){
 		if($(".bg").hasClass("startAnimate")) return false;
@@ -57,7 +59,7 @@ var ringAnimate = document.getElementById("ringAnimate");
 ringAnimate.addEventListener("webkitAnimationEnd", animationListener_ringAnimate, false);
 function animationListener_ringAnimate(){
 	setTimeout(function(){
-		//window.location.href = "video.html";
+		window.location.href = "video.html";
 	}, 1000)
 }
 
