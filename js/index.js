@@ -40,6 +40,7 @@ loader.addCompletionListener(function () {
 
     //swipe example
 	touch.on('.index', 'swiperight', function(ev){
+		if($(".bg").hasClass("startAnimate")) return false;
 	    $(".bg").addClass("startAnimate");  
 	    $(".light").hide();
 	    $(".activeTips").hide();
@@ -56,7 +57,7 @@ var ringAnimate = document.getElementById("ringAnimate");
 ringAnimate.addEventListener("webkitAnimationEnd", animationListener_ringAnimate, false);
 function animationListener_ringAnimate(){
 	setTimeout(function(){
-		window.location.href = "video.html";
+		//window.location.href = "video.html";
 	}, 1000)
 }
 
