@@ -1,8 +1,11 @@
+
+
 document.addEventListener('touchmove', function (e) {
     e.preventDefault();
 }, false);
 
 var basePath= "/";//'http://wximg.qq.com/wxp/moment/Vy5RRaaAl/';
+
 var wa = new WxMoment.Analytics({
     //projectName 请与微信商务团队确认
     projectName: "20160520Piaget"
@@ -23,6 +26,4 @@ new WxMoment.Share({
     }
 });
 
-
-//new WxMoment.OrientationTip();
 

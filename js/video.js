@@ -1,27 +1,4 @@
-// var pageSlider = new WxMoment.PageSlider({
-//     pages: $('.screen'),
-//     rememberLastVisited: true,
-//     oninit: function(){
-//         //返回时，需告诉我们此时为返回动作而不是刷新，可以通过 hash 告诉我们
-//         //PageSlider 所有回调接口 this 指向 PageSlider，方便进行操作
-//         if(this.rememberLastVisited){
-//             //如果返回是true，就执行下面跳转代码
-//             this.moveTo(this.lastVisitedIndex, true);
-//         }
-//     }
-// });
 
-//可用接口
-// pageSlider.prev() //上一屏
-// pageSlider.next() //下一屏
-// pageSlider.moveTo(n) //跳转到第 n 屏，有缓动效果
-// pageSlider.moveTo(n, true) //直接跳到第 n 屏，没有缓动效果
-
-$(document).ready(function(){
-    var wa = new WxMoment.Analytics({
-        projectName: "20160520Piaget"
-    });
-    
     var video, vidArr = ["z0191hxugeu", "z0191hxugeu"], modIdArr = ["v1", "v2"], picArr = ["/img/poster-1.jpg", "/img/poster-2.jpg"];
 
     var videoWidth = document.body.clientWidth;
@@ -94,10 +71,6 @@ $(document).ready(function(){
 	    }
     });
 
-    console.log(swiper);
-
-
-})
 
 
 
