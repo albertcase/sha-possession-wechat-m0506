@@ -80,7 +80,7 @@ loader.addCompletionListener(function () {
 
 				setTimeout(function(){
 					window.location.href = "video.html";
-				}, 1000)
+				}, 900)
 				
 			}else{
 				a<10?a="0"+a:a;
