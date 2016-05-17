@@ -16,7 +16,6 @@ $(document).ready(function(){
 
 	//声明资源文件列表
 	var fileList = [
-		'img/light.png', 
 		'img/arr_l.png', 
 		'img/arr_r.png', 
 		'img/btn.png', 
