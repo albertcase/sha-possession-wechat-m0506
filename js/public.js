@@ -1,5 +1,8 @@
 
 
+new WxMoment.OrientationTip();
+var share = new WxMoment.Share();
+
 document.addEventListener('touchmove', function (e) {
     e.preventDefault();
 }, false);
@@ -25,5 +28,3 @@ new WxMoment.Share({
         'link': "http://wximg.qq.com/wxp/moment/Vy5RRaaAl/html/index.html" //window.location.href.split("?")[0].replace(/([&|\?]{1})ticket=[\w\-]+(&?)/, '$1').replace(/\?$/, '')
     }
 });
-
-
