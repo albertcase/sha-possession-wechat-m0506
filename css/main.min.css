@@ -205,7 +205,7 @@ body{
 .bg {
     width: 100%;
     height: 100%;
-    background: url("../img/bg.jpg") 0 0 no-repeat;
+    background: url("../img/videobg.jpg") 0 0 no-repeat;
     background-size: auto 100%;
     position: absolute;
     left: 0;
@@ -213,35 +213,6 @@ body{
     z-index:2;
 }
 
-/*Clicking the label will select the checkbox which will be used to
-trigger the animation of the horses*/
-
-.bg.startAnimate {
-    -webkit-animation: horse-ride 950ms steps(14, end) 1;
-    /*-webkit-animation-delay: 100ms;*/
-    -moz-animation: horse-ride 950ms steps(14, end) 1;
-    /*-moz-animation-delay: 100ms;*/
-    /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
-    background-position: 0 100%;
-    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
-    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
-
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-}
-
-/*804px is the width of the image with 12 horse frames
-steps are used in the animation to have the best animation effect
-it will position the horse frames accurately in the boxes instead of
-tweening it px by px all the way through*/
-@-webkit-keyframes horse-ride {
-    0% {background-position: 0 0;}
-    100% {background-position: 100% 0;}
-}
-@-moz-keyframes horse-ride {
-    0% {background-position: 0 0;}
-    100% {background-position: 100% 0;}
-}
 
 
 /* light */
@@ -252,51 +223,9 @@ tweening it px by px all the way through*/
     left: 50%;
     top: 67%;
     text-align: center;
-    /*background: url("../img/light.png") 0 0 no-repeat;
-    background-size: auto 100%;*/
     margin: 0 0 0 -25%;
-
-    /*-webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
-    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);*/
 }
 
-/*.bg.startAnimate .light, .light.startAnimate {
-    -webkit-animation: light-ride 900ms steps(23, end) 1;
-    -webkit-animation-delay: 900ms;
-    -moz-animation: light-ride 900ms steps(23, end) 1;
-    -moz-animation-delay: 900ms;
-    /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
-    /*background-position: 0 100%;
-    
-    -webkit-transition: all 2.5s ease-in;*/
-    /*-moz-transition: all 2.5s ease-in;*/
-
-/*    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-}
-
-@-webkit-keyframes light-ride {
-    0% {background-position: 0 0;}
-    100% {background-position: 100% 0;}
-}
-@-moz-keyframes light-ride {
-    0% {background-position: 0 0;}
-    100% {background-position: 100% 0;}
-}*/
-
-
-/* ring */
-
-/*@-webkit-keyframes ring-ride {
-    0% {background-position: 0 0;}
-    100% {background-position: 0 100%;}
-}
-
-@-moz-keyframes ring-ride {
-    0% {background-position: 0 0;}
-    100% {background-position: 0 100%;}
-}
-*/
 
 .ring{
     width: 52%;
@@ -305,26 +234,11 @@ tweening it px by px all the way through*/
     left: 50%;
     top: 32%;
     text-align: center;
-    /*background: url("../img/ring.png") 0 0 no-repeat;
-    background-size: auto 100%;*/
     margin: 0 0 0 -26%;
     -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
     -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
 }
 
-/*
-.bg.startAnimate .ring {
-    -webkit-animation: horse-ride 1650ms steps(17, end) 1;
-    -webkit-animation-delay: 300ms;
-    -moz-animation: horse-ride 1650ms steps(17, end) 1;
-    -moz-animation-delay: 300ms;
-    /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
-   /* background-position: 0 100%;
-
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;*/
-/*}
-*/
 
 .logo{
     width: 100%;

@@ -16,7 +16,6 @@ $(document).ready(function(){
 
 	//声明资源文件列表
 	var fileList = [
-		'img/bg.jpg', 
 		'img/light.png', 
 		'img/arr_l.png', 
 		'img/arr_r.png', 
@@ -49,6 +48,27 @@ $(document).ready(function(){
 		'img/ring/ring_00017.png', 
 		'img/ring/ring_00018.png', 
 		'img/ring/ring_00019.png', 
+		'img/ring/ring_00020.png',
+		'img/ring/ring_00021.png',
+		'img/ring/ring_00022.png',
+		'img/ring/ring_00023.png',
+
+		'img/light/light_00000.png', 
+		'img/light/light_00001.png', 
+		'img/light/light_00002.png', 
+		'img/light/light_00003.png', 
+		'img/light/light_00004.png', 
+		'img/light/light_00005.png', 
+		'img/light/light_00006.png', 
+		'img/light/light_00007.png', 
+		'img/light/light_00008.png', 
+		'img/light/light_00009.png', 
+		'img/light/light_00010.png', 
+		'img/light/light_00011.png', 
+		'img/light/light_00012.png', 
+		'img/light/light_00013.png', 
+		'img/light/light_00014.png', 
+		'img/light/light_00015.png', 
 	];
 
 	for (var i = 0; i < fileList.length; i++) {
