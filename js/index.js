@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-	var rimg = $("#ringImg"), a=0, b=0, sitime, lightImg = $("#lightImg"), litime;
+	var rimg = $("#ringImg"), a=1, b=0, sitime, lightImg = $("#lightImg"), litime;
 
 	function ani(n){
 		rimg.attr("src", "../img/ring/ring_000"+n+".png");
@@ -28,7 +28,6 @@ $(document).ready(function(){
 		'img/share.jpg',
 		'img/wifi.png',
 
-		'img/ring/ring_00000.png', 
 		'img/ring/ring_00001.png', 
 		'img/ring/ring_00002.png', 
 		'img/ring/ring_00003.png', 
@@ -51,7 +50,6 @@ $(document).ready(function(){
 		'img/ring/ring_00020.png',
 		'img/ring/ring_00021.png',
 		'img/ring/ring_00022.png',
-		'img/ring/ring_00023.png',
 
 		'img/light/light_00000.png', 
 		'img/light/light_00001.png', 
@@ -68,7 +66,6 @@ $(document).ready(function(){
 		'img/light/light_00012.png', 
 		'img/light/light_00013.png', 
 		'img/light/light_00014.png', 
-		'img/light/light_00015.png', 
 	];
 
 	for (var i = 0; i < fileList.length; i++) {
@@ -96,7 +93,7 @@ $(document).ready(function(){
 	    $(".testcon").css("width", parseInt($("#ringAnimate").css("width"), 10)/18);
 
 	    litime = setInterval(function(){
-			if(b>=16){
+			if(b>=15){
 				clearTimeout(litime);	
 			}else{
 				b<10?b="0"+b:b;
@@ -114,7 +111,7 @@ $(document).ready(function(){
 		    $(".activeTips").hide();
 
 		    sitime = setInterval(function(){
-				if(a>=24){
+				if(a>=22){
 					clearTimeout(sitime);
 
 					setTimeout(function(){
