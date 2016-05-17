@@ -383,8 +383,6 @@ body{
         position: absolute;
         left: 50%;
         top: 29%;
-        /*background: url("../img/ring.png") 0 0 no-repeat;
-        background-size: auto 100%;*/
         margin: 0 0 0 -22.5%;
     }
 
@@ -395,8 +393,6 @@ body{
         position: absolute;
         left: 50%;
         top: 60%;
-        background: url("../img/light.png") 0 0 no-repeat;
-        background-size: auto 100%;
         margin: 0 0 0 -20%;
 
         -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
@@ -435,8 +431,6 @@ body{
         position: absolute;
         left: 50%;
         top: 27%;
-        /*background: url("../img/ring.png") 0 0 no-repeat;
-        background-size: auto 100%;*/
         margin: 0 0 0 -22.5%;
     }
 
@@ -447,8 +441,6 @@ body{
         position: absolute;
         left: 50%;
         top: 60%;
-        background: url("../img/light.png") 0 0 no-repeat;
-        background-size: auto 100%;
         margin: 0 0 0 -20%;
 
         -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
