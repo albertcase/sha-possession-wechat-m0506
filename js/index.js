@@ -19,7 +19,7 @@ var fileList = [
 	'img/tips.png', 
 	'img/videobg.jpg', 
 	'img/poster-1.jpg',
-	'img/poster-2.jpg'
+	'img/poster-2.jpg',
 
 	'img/ring/RING 2_00000.png', 
 	'img/ring/RING 2_00001.png', 
