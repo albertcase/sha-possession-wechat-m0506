@@ -81,7 +81,7 @@ $(document).ready(function(){
 
 					setTimeout(function(){
 						window.location.href = "video.html";
-					}, 900)
+					}, 600)
 					
 				}else{
 					a<10?a="0"+a:a;
