@@ -27,7 +27,6 @@ $(document).ready(function(){
 		'img/share.jpg',
 		'img/wifi.png',
 
-		'img/ring/ring_00001.png', 
 		'img/ring/ring_00002.png', 
 		'img/ring/ring_00003.png', 
 		'img/ring/ring_00004.png', 
@@ -48,7 +47,6 @@ $(document).ready(function(){
 		'img/ring/ring_00019.png', 
 		'img/ring/ring_00020.png',
 		'img/ring/ring_00021.png',
-		'img/ring/ring_00022.png',
 
 		'img/light/light_00000.png', 
 		'img/light/light_00001.png', 
@@ -64,7 +62,6 @@ $(document).ready(function(){
 		'img/light/light_00011.png', 
 		'img/light/light_00012.png', 
 		'img/light/light_00013.png', 
-		'img/light/light_00014.png', 
 	];
 
 	for (var i = 0; i < fileList.length; i++) {
