@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
     var video, vidArr = ["z0191hxugeu", "z0191hxugeu"], modIdArr = ["v1", "v2"], picArr = ["/img/poster-1.jpg", "/img/poster-2.jpg"];
 
     var videoWidth = document.body.clientWidth;
