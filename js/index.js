@@ -74,7 +74,7 @@ $(document).ready(function(){
 	//进度监听
 	loader.addProgressListener(function (e) {
 	    var percent = Math.round((e.completedCount / e.totalCount) * 100);
-	    console.log("当前加载了", percent, "%");
+	    //console.log("当前加载了", percent, "%");
 	    //在这里做 Loading 页面中百分比的显示
 	});
 
