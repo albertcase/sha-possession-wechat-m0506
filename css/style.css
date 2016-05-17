@@ -101,28 +101,44 @@ tweening it px by px all the way through*/
 
 
 /* ring */
+
+/*@-webkit-keyframes ring-ride {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 100%;}
+}
+
+@-moz-keyframes ring-ride {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 100%;}
+}
+*/
+
 .ring{
     width: 52%;
-    height: 50%;
+    height: 46%;
     position: absolute;
     left: 50%;
     top: 30%;
-    background: url("../img/ring.png") 0 0 no-repeat;
-    background-size: auto 100%;
+    /*background: url("../img/ring.png") 0 0 no-repeat;
+    background-size: auto 100%;*/
     margin: 0 0 0 -26%;
+    -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+    -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
 }
 
+/*
 .bg.startAnimate .ring {
-    -webkit-animation: horse-ride 2250ms steps(17, end) 1;
+    -webkit-animation: horse-ride 1650ms steps(17, end) 1;
     -webkit-animation-delay: 300ms;
-    -moz-animation: horse-ride 2250ms steps(17, end) 1;
+    -moz-animation: horse-ride 1650ms steps(17, end) 1;
     -moz-animation-delay: 300ms;
     /*Lets add a pre-anim which will start slowly and merge into the fast animation*/
-    background-position: 0 100%;
+   /* background-position: 0 100%;
 
     -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-}
+    -moz-animation-fill-mode: forwards;*/
+/*}
+*/
 
 .logo{
     width: 100%;
@@ -243,8 +259,8 @@ tweening it px by px all the way through*/
         position: absolute;
         left: 50%;
         top: 27%;
-        background: url("../img/ring.png") 0 0 no-repeat;
-        background-size: auto 100%;
+        /*background: url("../img/ring.png") 0 0 no-repeat;
+        background-size: auto 100%;*/
         margin: 0 0 0 -22.5%;
     }
 

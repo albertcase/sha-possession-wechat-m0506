@@ -1,4 +1,11 @@
 
+var rimg = $("#ringImg"), a=1, sitime;
+
+function ani(n){
+	rimg.attr("src", "/img/ring/RING 2_000"+n+".png");
+}
+
+
 var loader = new WxMoment.Loader();
 
 //声明资源文件列表
@@ -46,6 +53,18 @@ loader.addCompletionListener(function () {
 	    $(".bg").addClass("startAnimate");  
 	    $(".light").hide();
 	    $(".activeTips").hide();
+
+	    sitime = setInterval(function(){
+			if(a>=18){
+				clearTimeout(sitime);
+			}else{
+				a<10?a="0"+a:a;
+				//console.log(a);
+				ani(a);
+				a++;
+			}
+		}, 67);
+
 	});
 
 });
