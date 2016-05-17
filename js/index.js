@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-	var rimg = $("#ringImg"), a=1, b=0, sitime, lightImg = $("#lightImg"), litime;
+	var rimg = $("#ringImg"), a=2, b=0, sitime, lightImg = $("#lightImg"), litime;
 
 	function ani(n){
 		rimg.attr("src", "../img/ring/ring_000"+n+".png");
@@ -92,7 +92,7 @@ $(document).ready(function(){
 	    $(".testcon").css("width", parseInt($("#ringAnimate").css("width"), 10)/18);
 
 	    litime = setInterval(function(){
-			if(b>=15){
+			if(b>=14){
 				clearTimeout(litime);	
 			}else{
 				b<10?b="0"+b:b;
@@ -110,7 +110,7 @@ $(document).ready(function(){
 		    $(".activeTips").hide();
 
 		    sitime = setInterval(function(){
-				if(a>=22){
+				if(a>=20){
 					clearTimeout(sitime);
 
 					setTimeout(function(){
