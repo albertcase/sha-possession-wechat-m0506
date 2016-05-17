@@ -12,7 +12,6 @@ var loader = new WxMoment.Loader();
 var fileList = [
 	'img/bg.jpg', 
 	'img/light.png', 
-	'img/ring.png', 
 	'img/arr_l.png', 
 	'img/arr_r.png', 
 	'img/btn.png', 
@@ -21,6 +20,27 @@ var fileList = [
 	'img/videobg.jpg', 
 	'img/poster-1.jpg',
 	'img/poster-2.jpg'
+
+	'img/ring/RING 2_00000.png', 
+	'img/ring/RING 2_00001.png', 
+	'img/ring/RING 2_00002.png', 
+	'img/ring/RING 2_00003.png', 
+	'img/ring/RING 2_00004.png', 
+	'img/ring/RING 2_00005.png', 
+	'img/ring/RING 2_00006.png', 
+	'img/ring/RING 2_00007.png', 
+	'img/ring/RING 2_00008.png', 
+	'img/ring/RING 2_00009.png', 
+	'img/ring/RING 2_00010.png', 
+	'img/ring/RING 2_00011.png', 
+	'img/ring/RING 2_00012.png', 
+	'img/ring/RING 2_00013.png', 
+	'img/ring/RING 2_00014.png', 
+	'img/ring/RING 2_00015.png', 
+	'img/ring/RING 2_00016.png', 
+	'img/ring/RING 2_00017.png', 
+	'img/ring/RING 2_00018.png', 
+	'img/ring/RING 2_00019.png', 
 ];
 
 for (var i = 0; i < fileList.length; i++) {
