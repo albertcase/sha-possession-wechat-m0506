@@ -77,6 +77,11 @@ loader.addCompletionListener(function () {
 	    sitime = setInterval(function(){
 			if(a>=18){
 				clearTimeout(sitime);
+
+				setTimeout(function(){
+					window.location.href = "video.html";
+				}, 1000)
+				
 			}else{
 				a<10?a="0"+a:a;
 				//console.log(a);
@@ -94,13 +99,11 @@ loader.start();
 
 
 
-var ringAnimate = document.getElementById("ringAnimate");
-ringAnimate.addEventListener("webkitAnimationEnd", animationListener_ringAnimate, false);
-function animationListener_ringAnimate(){
-	setTimeout(function(){
-		window.location.href = "video.html";
-	}, 1000)
-}
+// var ringAnimate = document.getElementById("ringAnimate");
+// ringAnimate.addEventListener("webkitAnimationEnd", animationListener_ringAnimate, false);
+// function animationListener_ringAnimate(){
+	
+// }
 
 
 
