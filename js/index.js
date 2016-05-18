@@ -157,18 +157,7 @@ $(document).ready(function(){
 
 	}
 	
-	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.height, 10) == "1152"){
-
-		$(".logo img").css({"width": "90%"});
-		$(".morebtn").css({
-			"bottom": "18%",
-		});
-
-		$(".videoCon").css({
-			"top": "29%",
-		});
-	}
-
+	
 
 
 

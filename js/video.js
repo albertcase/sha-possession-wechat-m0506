@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.height, 10) == "1152"){
+
+		$(".logo img").css({"width": "90%"});
+		$(".morebtn").css({
+			"bottom": "18%",
+		});
+
+		$(".videoCon").css({
+			"top": "29%",
+		});
+	}
+
 
     var video, vidArr = ["z0191hxugeu", "z0191hxugeu"], modIdArr = ["v1", "v2"], picArr = ["http://wximg.qq.com/wxp/moment/Vy5RRaaAl/img/poster-1.jpg", "http://wximg.qq.com/wxp/moment/Vy5RRaaAl/img/poster-2.jpg"];
 
@@ -72,6 +84,8 @@ $(document).ready(function(){
 	      	videoFun(swiper.activeIndex);
 	    }
     });
+
+
 
 
 })
