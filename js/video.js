@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-    var video, vidArr = ["z0191hxugeu", "z0191hxugeu"], modIdArr = ["v1", "v2"], picArr = ["/img/poster-1.jpg", "/img/poster-2.jpg"];
+    var video, vidArr = ["z0191hxugeu", "z0191hxugeu"], modIdArr = ["v1", "v2"], picArr = ["http://wximg.qq.com/wxp/moment/Vy5RRaaAl/img/poster-1.jpg", "http://wximg.qq.com/wxp/moment/Vy5RRaaAl/img/poster-2.jpg"];
 
     var videoWidth = document.body.clientWidth;
 	var videoHeight = videoWidth * (1080 / 1920);
