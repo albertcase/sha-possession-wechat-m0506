@@ -130,6 +130,46 @@ $(document).ready(function(){
 	loader.start();
 
 
+	// alert(window.screen.width);
+// alert(window.screen.height);
+	
+	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.width, 10) == "1152"){
+		alert(6);
+		$(".logo img").css({"width": "90%"});
+		$(".ring").css({
+			"width": "45%",
+	        "height": "42%",
+	        "top": "27%",
+	        "margin": "0 0 0 -22.5%"
+		});
+
+		$(".light").css({
+			"width": "40%",
+	        "height": "20%",
+	        "top": "60%",
+	        "margin": "0 0 0 -20%",
+	        "z-index": "2"
+		});
+
+		$(".activeTips").css({
+			"bottom": "22%",
+		});
+
+	}
+	
+	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.width, 10) == "1152"){
+
+		$(".logo img").css({"width": "90%"});
+		$(".morebtn").css({
+			"bottom": "18%",
+		});
+
+		$(".videoCon").css({
+			"top": "29%",
+		});
+	}
+
+
 
 
 })
