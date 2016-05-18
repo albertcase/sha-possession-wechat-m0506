@@ -133,7 +133,7 @@ $(document).ready(function(){
 	// alert(window.screen.width);
 // alert(window.screen.height);
 	
-	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.width, 10) == "1152"){
+	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.height, 10) == "1152"){
 		alert(6);
 		$(".logo img").css({"width": "90%"});
 		$(".ring").css({
@@ -157,7 +157,7 @@ $(document).ready(function(){
 
 	}
 	
-	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.width, 10) == "1152"){
+	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.height, 10) == "1152"){
 
 		$(".logo img").css({"width": "90%"});
 		$(".morebtn").css({
