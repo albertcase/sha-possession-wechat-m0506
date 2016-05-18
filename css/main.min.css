@@ -441,7 +441,49 @@ body{
 
 
 
+/* mz */
+@media only screen and (device-height: 1152px) and (device-width: 1920px){
 
+    .logo img{
+        width: 90%;
+    }
+
+    .ring{
+        width: 45%;
+        height: 42%;
+        position: absolute;
+        left: 50%;
+        top: 27%;
+        margin: 0 0 0 -22.5%;
+    }
+
+    /* light */
+    .light{
+        width: 40%;
+        height: 20%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        margin: 0 0 0 -20%;
+
+        -webkit-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+        -moz-transition: all 6s cubic-bezier(.19, .64, .45, .89);
+        z-index: 2;
+    }
+
+    .activeTips{
+        bottom: 22%;
+    }
+
+    .morebtn{
+        bottom: 18%;
+    }
+
+    .videoCon{
+        top: 29%;
+    }
+
+}
 
 
 
