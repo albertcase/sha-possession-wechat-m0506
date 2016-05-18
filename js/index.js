@@ -134,7 +134,7 @@ $(document).ready(function(){
 // alert(window.screen.height);
 	
 	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.height, 10) == "1152"){
-		alert(6);
+		alert(parseInt(window.screen.width, 10));
 		$(".logo img").css({"width": "90%"});
 		$(".ring").css({
 			"width": "45%",
