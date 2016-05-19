@@ -129,9 +129,8 @@ $(document).ready(function(){
 	//启动加载
 	loader.start();
 
-
-	// alert(window.screen.width);
-// alert(window.screen.height);
+	 alert(parseInt(window.screen.width, 10));
+	 alert(parseInt(window.screen.height, 10));
 	
 	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.height, 10) == "1152"){
 		alert(parseInt(window.screen.width, 10));
