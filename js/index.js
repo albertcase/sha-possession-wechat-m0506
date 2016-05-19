@@ -11,7 +11,7 @@ $(document).ready(function(){
 		lightImg.attr("src", "../img/light/light_000"+n+".png");
 	}
 
-
+	new WxMoment.OrientationTip();
 	var loader = new WxMoment.Loader();
 
 	//声明资源文件列表
@@ -129,8 +129,6 @@ $(document).ready(function(){
 	//启动加载
 	loader.start();
 
-	 alert(parseInt(window.screen.width, 10));
-	 alert(parseInt(window.screen.height, 10));
 	
 	if(parseInt(window.screen.width, 10) == "1920" && parseInt(window.screen.height, 10) == "1152"){
 		alert(parseInt(window.screen.width, 10));
