@@ -12,6 +12,8 @@ $(document).ready(function(){
 		});
 	}
 
+	new WxMoment.OrientationTip();
+
 
     var video, vidArr = ["z0191hxugeu", "z0191hxugeu"], modIdArr = ["v1", "v2"], picArr = ["http://wximg.qq.com/wxp/moment/Vy5RRaaAl/img/poster-1.jpg", "http://wximg.qq.com/wxp/moment/Vy5RRaaAl/img/poster-2.jpg"];
 
